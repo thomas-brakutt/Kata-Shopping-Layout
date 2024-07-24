@@ -13,7 +13,7 @@ body {
   background-color: #f5f5f5;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
+  justify-content: space-evenly;
 }
 
 img {
@@ -21,10 +21,12 @@ img {
 }
 
 article {
+  max-width: 470px;
   border: 1px solid black;
   border-radius: 1.5rem;
   background-color: #fff;
   margin-block: 2rem;
+  box-shadow: #aaa5a5 0rem 0rem 9px 0px;
 }
 
 /* -----  styling left card  ------*/
@@ -33,12 +35,14 @@ article {
   margin-left: 2rem;
 }
 
+/* Left Card - Header styling */
+
 .header-left-card {
   background: linear-gradient(to top, #fff 5%, transparent 40%),
     url(https://images.unsplash.com/photo-1560072810-1cffb09faf0f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80);
   background-size: 100%;
   background-repeat: no-repeat;
-  max-width: 419px;
+  max-width: auto;
   height: 279px;
   border-radius: 1.5rem 1.5rem 0 0;
   display: flex;
@@ -58,7 +62,7 @@ article {
   padding-inline: 0.5rem;
   border-radius: 0.3rem;
   font-size: 0.8rem;
-  font: Quicksand;
+  font-family: Quicksand;
 }
 
 .photographer {
@@ -69,9 +73,18 @@ article {
   font-size: 0.7rem;
 }
 
-.right-card {
-  margin-right: 2rem;
+/* Left Card - Main styling */
+
+main {
+  margin: 1rem;
 }
+
+main p {
+  color: #7e7e7e;
+  padding-bottom: 1rem;
+}
+
+/* Left Card - Footer styling */
 
 footer {
   border: 1px solid black;
@@ -79,3 +92,121 @@ footer {
   background-color: #f5f5f5;
   margin: 1rem;
 }
+
+footer h2 {
+  background-color: #fff;
+  font-weight: 400;
+  margin-inline: 1rem;
+  border-radius: 0.3rem;
+  padding-block: 0.5rem;
+  text-align: center;
+}
+
+.label-size {
+  margin-left: 1rem;
+  color: #7e7e7e;
+}
+
+select {
+  margin-left: 1rem;
+  color: #7e7e7e;
+  padding-right: 0.5rem;
+}
+
+.label-quantity {
+  margin-left: 5.5rem;
+  color: #7e7e7e;
+}
+
+button {
+  background-color: #485fb9;
+  border-radius: 0.3rem;
+  color: #fff;
+  width: 353.664px;
+  height: 30px;
+
+  margin: 1rem;
+}
+
+/* -----  styling medium card  ------*/
+
+/* Medium Card - Header styling */
+
+.medium-card {
+}
+
+.header-medium-card {
+  background: linear-gradient(to top, #fff 5%, transparent 40%),
+    url(https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  max-width: auto;
+  height: 279px;
+  border-radius: 1.5rem 1.5rem 0 0;
+  display: flex;
+  position: relative;
+}
+
+.header-medium-card p {
+  margin: 0;
+}
+
+.photographer {
+  position: absolute;
+  top: 85%;
+  left: 1rem;
+  color: #7e7e7e;
+  font-size: 0.7rem;
+}
+
+/* Medium Card - Main styling */
+
+/* Medium Card - Footer styling */
+
+/* -----  styling right card  ------*/
+
+.right-card {
+  margin-right: 2rem;
+}
+
+/* Right Card - Header styling */
+
+.header-right-card {
+  background: linear-gradient(to top, #fff 5%, transparent 40%),
+    url(https://images.unsplash.com/photo-1539185441755-769473a23570?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1471&q=80);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  max-width: auto;
+  height: 279px;
+  border-radius: 1.5rem 1.5rem 0 0;
+  display: flex;
+  position: relative;
+}
+
+.header-left-card p {
+  margin: 0;
+}
+
+.just-one-left {
+  position: absolute;
+  background-color: #f5f5f5a1;
+  left: 70%;
+  _top: 0.8rem;
+  padding-block: 0.2rem;
+  padding-inline: 0.5rem;
+  border-radius: 0.3rem;
+  font-size: 0.8rem;
+  font-family: Quicksand;
+}
+
+.photographer {
+  position: absolute;
+  top: 85%;
+  left: 1rem;
+  color: #7e7e7e;
+  font-size: 0.7rem;
+}
+
+/* Right Card - Main styling */
+
+/* Right Card - Footer styling */
