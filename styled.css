@@ -11,8 +11,7 @@ html {
 body {
   margin: 0;
   background-color: #f5f5f5;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   justify-content: space-evenly;
 }
 
@@ -21,18 +20,19 @@ img {
 }
 
 article {
-  max-width: 470px;
+  max-width: 425px;
+  height: auto;
+  margin-block: 2rem;
   border: 1px solid black;
   border-radius: 1.5rem;
   background-color: #fff;
-  margin-block: 2rem;
   box-shadow: #aaa5a5 0rem 0rem 9px 0px;
 }
 
 /* -----  styling left card  ------*/
 
 .left-card {
-  margin-left: 2rem;
+  margin-inline: 2rem 1rem;
 }
 
 /* Left Card - Header styling */
@@ -42,7 +42,6 @@ article {
     url(https://images.unsplash.com/photo-1560072810-1cffb09faf0f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80);
   background-size: 100%;
   background-repeat: no-repeat;
-  max-width: auto;
   height: 279px;
   border-radius: 1.5rem 1.5rem 0 0;
   display: flex;
@@ -118,29 +117,76 @@ select {
   color: #7e7e7e;
 }
 
+form {
+  margin: 1rem;
+  color: #7e7e7e;
+}
+
+.blue {
+  _color: black;
+  appearance: none;
+  background-color: blue;
+  margin-inline: 0.2rem;
+  margin-bottom: -0.4rem;
+  font: inherit;
+  color: black;
+  width: 1.5em;
+  height: 1.5em;
+  border: 0.15em solid blue;
+  border-radius: 50%;
+}
+
+.red {
+  _color: black;
+  appearance: none;
+  background-color: red;
+  margin-inline: 0.2rem;
+  margin-bottom: -0.4rem;
+  font: inherit;
+  color: black;
+  width: 1.5em;
+  height: 1.5em;
+  border: 0.15em solid red;
+  border-radius: 50%;
+}
+
+.black {
+  _color: black;
+  appearance: none;
+  background-color: black;
+  margin-inline: 0.2rem;
+  margin-bottom: -0.4rem;
+  font: inherit;
+  color: black;
+  width: 1.5em;
+  height: 1.5em;
+  border: 0.15em solid black;
+  border-radius: 50%;
+}
+
 button {
   background-color: #485fb9;
   border-radius: 0.3rem;
   color: #fff;
-  width: 353.664px;
-  height: 30px;
-
   margin: 1rem;
+  padding-block: 0.7rem;
+  padding-inline: 9rem;
+  text-wrap: nowrap;
 }
 
 /* -----  styling medium card  ------*/
 
-/* Medium Card - Header styling */
-
 .medium-card {
+  margin-inline: 1rem;
 }
+
+/* Medium Card - Header styling */
 
 .header-medium-card {
   background: linear-gradient(to top, #fff 5%, transparent 40%),
     url(https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: 100%;
   background-repeat: no-repeat;
-  max-width: auto;
   height: 279px;
   border-radius: 1.5rem 1.5rem 0 0;
   display: flex;
@@ -166,7 +212,7 @@ button {
 /* -----  styling right card  ------*/
 
 .right-card {
-  margin-right: 2rem;
+  margin-inline: 1rem 2rem;
 }
 
 /* Right Card - Header styling */
@@ -176,7 +222,6 @@ button {
     url(https://images.unsplash.com/photo-1539185441755-769473a23570?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1471&q=80);
   background-size: 100%;
   background-repeat: no-repeat;
-  max-width: auto;
   height: 279px;
   border-radius: 1.5rem 1.5rem 0 0;
   display: flex;
