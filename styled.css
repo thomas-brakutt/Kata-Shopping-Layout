@@ -4,13 +4,22 @@
   box-sizing: border-box;
 }
 
+:root {
+  --background-body: #f5f5f5;
+  --background-product-Card: #fff;
+  --background-button: #485fb9;
+  --text-color: #7e7e7e;
+  --radius-außen: 1.5rem;
+  --radius-innen: 0.5rem;
+}
+
 html {
   font-family: Quicksand;
 }
 
 body {
   margin: 0;
-  background-color: #f5f5f5;
+  background-color: var(--background-body);
   display: flex;
   justify-content: space-evenly;
 }
@@ -24,8 +33,8 @@ article {
   height: auto;
   margin-block: 2rem;
   border: 1px solid black;
-  border-radius: 1.5rem;
-  background-color: #fff;
+  border-radius: var(--radius-außen);
+  background-color: var(--background-product-Card);
   box-shadow: #aaa5a5 0rem 0rem 9px 0px;
 }
 
@@ -38,7 +47,11 @@ article {
 /* Left Card - Header styling */
 
 .header-left-card {
-  background: linear-gradient(to top, #fff 5%, transparent 40%),
+  background: linear-gradient(
+      to top,
+      var(--background-product-Card) 5%,
+      transparent 40%
+    ),
     url(https://images.unsplash.com/photo-1560072810-1cffb09faf0f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1470&q=80);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -61,14 +74,13 @@ article {
   padding-inline: 0.5rem;
   border-radius: 0.3rem;
   font-size: 0.8rem;
-  font-family: Quicksand;
 }
 
 .photographer {
   position: absolute;
   top: 85%;
   left: 1rem;
-  color: #7e7e7e;
+  color: var(--text-color);
   font-size: 0.7rem;
 }
 
@@ -79,7 +91,7 @@ main {
 }
 
 main p {
-  color: #7e7e7e;
+  color: var(--text-color);
   padding-bottom: 1rem;
 }
 
@@ -87,13 +99,13 @@ main p {
 
 footer {
   border: 1px solid #f5f5f5;
-  border-radius: 0.5rem;
-  background-color: #f5f5f5;
+  border-radius: var(--radius-innen);
+  background-color: var(--background-body);
   margin: 1rem;
 }
 
 footer h2 {
-  background-color: #fff;
+  background-color: var(--background-product-Card);
   font-weight: 400;
   margin-inline: 1rem;
   border-radius: 0.3rem;
@@ -103,47 +115,42 @@ footer h2 {
 
 .label-size {
   margin-left: 1rem;
-  color: #7e7e7e;
+  color: var(--text-color);
 }
 
 select {
   margin-left: 1rem;
-  color: #7e7e7e;
+  color: var(--text-color);
   padding-right: 0.5rem;
 }
 
 .label-quantity {
   margin-left: 5.5rem;
-  color: #7e7e7e;
+  color: var(--text-color);
 }
 
 form {
   margin: 1rem;
-  color: #7e7e7e;
+  color: var(--text-color);
 }
 
 .blue {
-  _color: black;
   appearance: none;
   background-color: blue;
   margin-inline: 0.2rem;
   margin-bottom: -0.4rem;
   font: inherit;
-  color: black;
   width: 1.5em;
   height: 1.5em;
-  border: 0.15em solid blue;
   border-radius: 50%;
 }
 
 .red {
-  _color: black;
   appearance: none;
   background-color: red;
   margin-inline: 0.2rem;
   margin-bottom: -0.4rem;
   font: inherit;
-  color: black;
   width: 1.5em;
   height: 1.5em;
   border: 0.15em solid red;
@@ -151,13 +158,11 @@ form {
 }
 
 .black {
-  _color: black;
   appearance: none;
   background-color: black;
   margin-inline: 0.2rem;
   margin-bottom: -0.4rem;
   font: inherit;
-  color: black;
   width: 1.5em;
   height: 1.5em;
   border: 0.15em solid black;
@@ -165,9 +170,9 @@ form {
 }
 
 button {
-  background-color: #485fb9;
+  background-color: var(--background-button);
   border-radius: 0.3rem;
-  color: #fff;
+  color: var(--background-product-Card);
   margin: 1rem;
   padding-block: 0.7rem;
   padding-inline: 9rem;
@@ -183,7 +188,11 @@ button {
 /* Medium Card - Header styling */
 
 .header-medium-card {
-  background: linear-gradient(to top, #fff 5%, transparent 40%),
+  background: linear-gradient(
+      to top,
+      var(--background-product-Card) 5%,
+      transparent 40%
+    ),
     url(https://images.unsplash.com/flagged/photo-1556637640-2c80d3201be8?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -201,7 +210,7 @@ button {
   position: absolute;
   top: 85%;
   left: 1rem;
-  color: #7e7e7e;
+  color: var(--text-color);
   font-size: 0.7rem;
 }
 
@@ -210,7 +219,6 @@ button {
 /* Medium Card - Footer styling */
 
 .green-black {
-  _color: black;
   appearance: none;
   background: linear-gradient(
     to right,
@@ -222,15 +230,12 @@ button {
   margin-inline: 0.2rem;
   margin-bottom: -0.4rem;
   font: inherit;
-  color: black;
   width: 1.5em;
   height: 1.5em;
-  _border: 0.15em solid black;
   border-radius: 50%;
 }
 
 .blue-black {
-  _color: black;
   appearance: none;
   background: linear-gradient(
     to right,
@@ -242,15 +247,12 @@ button {
   margin-inline: 0.2rem;
   margin-bottom: -0.4rem;
   font: inherit;
-  color: black;
   width: 1.5em;
   height: 1.5em;
-  _border: 0.15em solid black;
   border-radius: 50%;
 }
 
 .pink-black {
-  _color: black;
   appearance: none;
   background: linear-gradient(
     to right,
@@ -262,10 +264,8 @@ button {
   margin-inline: 0.2rem;
   margin-bottom: -0.4rem;
   font: inherit;
-  color: black;
   width: 1.5em;
   height: 1.5em;
-  _border: 0.15em solid black;
   border-radius: 50%;
 }
 
@@ -278,7 +278,11 @@ button {
 /* Right Card - Header styling */
 
 .header-right-card {
-  background: linear-gradient(to top, #fff 5%, transparent 40%),
+  background: linear-gradient(
+      to top,
+      var(--background-product-Card) 5%,
+      transparent 40%
+    ),
     url(https://images.unsplash.com/photo-1539185441755-769473a23570?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1471&q=80);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -308,7 +312,7 @@ button {
   position: absolute;
   top: 85%;
   left: 1rem;
-  color: #7e7e7e;
+  color: var(--text-color);
   font-size: 0.7rem;
 }
 
@@ -317,7 +321,6 @@ button {
 /* Right Card - Footer styling */
 
 .red-white {
-  _color: black;
   appearance: none;
   background: linear-gradient(
     to right,
@@ -329,7 +332,6 @@ button {
   margin-inline: 0.2rem;
   margin-bottom: -0.4rem;
   font: inherit;
-  color: black;
   width: 1.5em;
   height: 1.5em;
   border: 0.05rem solid lightgrey;
@@ -337,13 +339,11 @@ button {
 }
 
 .black-white {
-  _color: black;
   appearance: none;
   background: linear-gradient(to right, black, black 50%, white, white 50%);
   margin-inline: 0.2rem;
   margin-bottom: -0.4rem;
   font: inherit;
-  color: black;
   width: 1.5em;
   height: 1.5em;
   border: 0.05rem solid lightgrey;
