@@ -134,6 +134,13 @@ form {
   color: var(--text-color);
 }
 
+form label {
+  font-size: 1px;
+  position: absolute;
+  z-index: -1000;
+  top: -1000px;
+} /* um die Schrift vom Label unsichtbar zu machen; für semantik wichtig */
+
 .blue {
   appearance: none;
   background-color: blue;
@@ -145,6 +152,16 @@ form {
   border-radius: 50%;
 }
 
+.blue:hover {
+  outline: 2px solid blue;
+  outline-offset: 2px;
+}
+
+.blue:checked {
+  outline: 2px solid blue;
+  outline-offset: 2px;
+}
+
 .red {
   appearance: none;
   background-color: red;
@@ -153,8 +170,17 @@ form {
   font: inherit;
   width: 1.5em;
   height: 1.5em;
-  border: 0.15em solid red;
   border-radius: 50%;
+}
+
+.red:hover {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+
+.red:checked {
+  outline: 2px solid red;
+  outline-offset: 2px;
 }
 
 .black {
@@ -165,8 +191,22 @@ form {
   font: inherit;
   width: 1.5em;
   height: 1.5em;
-  border: 0.15em solid black;
   border-radius: 50%;
+}
+
+.black:hover {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
+
+.black:checked {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
+
+form input:focus {
+  outline: 3px dotted black;
+  outline-offset: 2px;
 }
 
 button {
@@ -235,6 +275,16 @@ button {
   border-radius: 50%;
 }
 
+.green-black:hover {
+  outline: 2px solid darkkhaki;
+  outline-offset: 2px;
+}
+
+.green-black:checked {
+  outline: 2px solid darkkhaki;
+  outline-offset: 2px;
+}
+
 .blue-black {
   appearance: none;
   background: linear-gradient(
@@ -252,6 +302,16 @@ button {
   border-radius: 50%;
 }
 
+.blue-black:hover {
+  outline: 2px solid dodgerblue;
+  outline-offset: 2px;
+}
+
+.blue-black:checked {
+  outline: 2px solid dodgerblue;
+  outline-offset: 2px;
+}
+
 .pink-black {
   appearance: none;
   background: linear-gradient(
@@ -267,6 +327,16 @@ button {
   width: 1.5em;
   height: 1.5em;
   border-radius: 50%;
+}
+
+.pink-black:hover {
+  outline: 2px solid palevioletred;
+  outline-offset: 2px;
+}
+
+.pink-black:checked {
+  outline: 2px solid palevioletred;
+  outline-offset: 2px;
 }
 
 /* -----  styling right card  ------*/
@@ -338,6 +408,16 @@ button {
   border-radius: 50%;
 }
 
+.red-white:hover {
+  outline: 2px solid firebrick;
+  outline-offset: 2px;
+}
+
+.red-white:checked {
+  outline: 2px solid firebrick;
+  outline-offset: 2px;
+}
+
 .black-white {
   appearance: none;
   background: linear-gradient(to right, black, black 50%, white, white 50%);
@@ -348,4 +428,14 @@ button {
   height: 1.5em;
   border: 0.05rem solid lightgrey;
   border-radius: 50%;
+}
+
+.black-white:hover {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
+
+.black-white:checked {
+  outline: 2px solid black;
+  outline-offset: 2px;
 }
